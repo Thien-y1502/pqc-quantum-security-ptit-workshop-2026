@@ -26,3 +26,5 @@ The toy Shor, ECC, Grover, AES and HNDL examples are deliberately small and do n
 ## Verification status
 
 The archive includes its own execution logs and test output. Re-running the full benchmark suite is environment-dependent: install the pinned-compatible Python packages and OpenSSL 3.5+ first. A future run should record fresh output rather than silently replacing the supplied observations.
+
+On the Windows audit machine used for this publication, `python -m unittest discover -s tests -v` ran eight tests: seven toy/math/protocol tests passed and the one real-provider test was `NOT_RUN` because `openssl.exe` was not present on `PATH`. This is an environment limitation, not evidence that the standardized operations failed or that a new benchmark was obtained.
