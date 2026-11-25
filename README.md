@@ -71,7 +71,7 @@ results/figures/                 Figure PNG and vector SVG
 results/logs/                    Execution, tests, slide QA
 slides/build_deck.js             Editable PptxGenJS slide source
 slides/assets/equations/         Editable LaTeX + PDF + high-DPI PNG
-slides/PQC_Quantum_Security_PTIT_2026.pptx
+slides/PQC_Quantum_Security_PTIT_Workshop_2026.pptx  Supplied workshop deck
 slides/preview_montage.png
 docs/PRESENTER_NOTES.md           Every slide's speaker notes and sources
 docs/METHODS_AND_LIMITATIONS.md   Exact scientific integrity boundaries
