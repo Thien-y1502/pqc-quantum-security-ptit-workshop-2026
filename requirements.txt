@@ -1,0 +1,4 @@
+# Tested with Python 3.11+, OpenSSL 3.5.5 on Linux.
+numpy>=2.0,<3.0
+matplotlib>=3.8,<4.0
+cryptography>=46.0,<48.0

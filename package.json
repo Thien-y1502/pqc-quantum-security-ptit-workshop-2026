@@ -1,0 +1,12 @@
+{
+  "name": "ptit-pqc-workshop-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible educational post-quantum cryptography demonstrations and PowerPoint",
+  "scripts": {
+    "slides": "node slides/build_deck.js slides/PQC_Quantum_Security_PTIT_2026.pptx"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.0"
+  }
+}

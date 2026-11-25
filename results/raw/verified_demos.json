@@ -1,0 +1,94 @@
+{
+  "rsa_toy": {
+    "modulus": 15,
+    "public_exponent": 3,
+    "private_exponent": 3,
+    "plaintext_integer": 2,
+    "ciphertext_integer": 8,
+    "recovered_plaintext": 2,
+    "factors": [
+      3,
+      5
+    ],
+    "period": 4,
+    "quantum_model": "ideal modular-exponentiation oracle + exact inverse-QFT sampling",
+    "not_claimed": "This does not attack RSA-2048 or estimate fault-tolerant resources."
+  },
+  "ecc_toy": {
+    "group_order": 19,
+    "curve": {
+      "p": 17,
+      "a": 2,
+      "b": 2
+    },
+    "generator": [
+      5,
+      1
+    ],
+    "public_point": [
+      0,
+      6
+    ],
+    "recovered_scalar": 7,
+    "recoverable_shot_fraction": 0.951171875,
+    "quantum_model": "ideal two-register EC-group oracle and inverse-QFT sampling",
+    "not_claimed": "This does not crack P-256 or model a full fault-tolerant machine."
+  },
+  "grover": {
+    "candidate_count": 256,
+    "optimal_iteration": 12,
+    "ideal_success": 0.9999470421032736,
+    "not_claimed": "This is an unstructured oracle, not an AES-128 or AES-256 oracle."
+  },
+  "aes_partial_key_exposure": {
+    "cipher": "AES-128-GCM, real library",
+    "unknown_key_bits": 12,
+    "known_key_bits": 116,
+    "search_space": 4096,
+    "attempts": 1734,
+    "elapsed_ms": 3.403606,
+    "key_recovered": true,
+    "plaintext_verified": true,
+    "not_claimed": "Full 128-bit AES keys were not searched."
+  },
+  "hndl_toy": {
+    "recorded_ciphertext_bytes": 84,
+    "curve_order": 19,
+    "attacker_recovered_ec_scalar": 7,
+    "restored_exact_plaintext": "SYNTHETIC ONLY: Example invoice INV-2026-001, total 1200 test units.",
+    "warning": "A synthetic scenario with an intentionally tiny elliptic curve; not a deployed TLS attack."
+  },
+  "mlkem": {
+    "algorithm": "ML-KEM-768 (FIPS 203) via OpenSSL 3.5+",
+    "ciphertext_bytes": 1088,
+    "shared_secret_bytes": 32,
+    "encaps_decaps_match": true,
+    "aead_algorithm": "AES-256-GCM",
+    "aead_roundtrip": true,
+    "aead_tamper_rejected": true,
+    "warning": "AEAD tamper rejection is not a security proof for ML-KEM. Sender authenticity is separate."
+  },
+  "signatures": [
+    {
+      "algorithm": "ML-DSA-65",
+      "signature_bytes": 3309,
+      "valid_document_accepted": true,
+      "modified_document_accepted": false
+    },
+    {
+      "algorithm": "SLH-DSA-SHA2-128s",
+      "signature_bytes": 7856,
+      "valid_document_accepted": true,
+      "modified_document_accepted": false
+    }
+  ],
+  "hybrid": {
+    "classical_component": "X25519",
+    "pqc_component": "ML-KEM-768",
+    "combiner": "HKDF-SHA256 over concatenated secrets",
+    "key_bytes": 32,
+    "ciphertext_bytes": 84,
+    "roundtrip": true,
+    "warning": "Demonstration of composition, not RFC 10024/TLS. No authentication or side-channel analysis."
+  }
+}

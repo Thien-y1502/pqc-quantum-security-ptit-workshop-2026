@@ -1,0 +1,13 @@
+test_aes_partial_known_key (test_demos.ProtocolDemoTest.test_aes_partial_known_key) ... ok
+test_hndl_toy (test_demos.ProtocolDemoTest.test_hndl_toy) ... ok
+test_real_nist_algorithms (test_demos.ProtocolDemoTest.test_real_nist_algorithms) ... ok
+test_rsa_ecc_toy_roundtrip (test_demos.ProtocolDemoTest.test_rsa_ecc_toy_roundtrip) ... ok
+test_ec_group_arithmetic (test_demos.QuantumToyTest.test_ec_group_arithmetic) ... ok
+test_ec_qft (test_demos.QuantumToyTest.test_ec_qft) ... ok
+test_grover (test_demos.QuantumToyTest.test_grover) ... ok
+test_rsa_qft (test_demos.QuantumToyTest.test_rsa_qft) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.648s
+
+OK

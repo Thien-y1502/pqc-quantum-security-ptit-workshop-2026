@@ -1,0 +1,17 @@
+{
+  "openssl_version": "OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "machine": "x86_64",
+  "processor": "",
+  "trials_per_primitive": 12,
+  "aes_trials": 30,
+  "timing_method": "wall clock ns / subprocess for key and signatures, AES Python binding in-process",
+  "limitations": [
+    "Not a controlled cross-implementation cryptographic benchmark",
+    "OpenSSL CLI results include process startup, PEM parse, disk I/O",
+    "AES-GCM uses Python binding, compared only within AES variants",
+    "No networking/real TLS or side channels measured",
+    "Single-host non-isolated exploratory benchmark; performance can vary by run"
+  ]
+}

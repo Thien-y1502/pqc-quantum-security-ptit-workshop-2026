@@ -1,0 +1,6 @@
+{
+  "all_demo_checks": "PASS",
+  "demo_count": 8,
+  "primitive_timed_types": 11,
+  "figures": 9
+}

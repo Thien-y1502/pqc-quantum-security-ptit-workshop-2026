@@ -1,0 +1,14 @@
+family,algorithm,size_type,bytes
+signature,RSA-PSS-2048,public_key_SPKI_DER,294
+signature,RSA-PSS-2048,signature,256
+signature,ECDSA-P256,public_key_SPKI_DER,91
+signature,ECDSA-P256,signature,72
+signature,ML-DSA-65,public_key_SPKI_DER,1974
+signature,ML-DSA-65,signature,3309
+signature,SLH-DSA-SHA2-128s,public_key_SPKI_DER,50
+signature,SLH-DSA-SHA2-128s,signature,7856
+key_establishment,X25519,public_key_SPKI_DER,44
+key_establishment,ML-KEM-768,public_key_SPKI_DER,1206
+key_establishment,X25519,secret_bytes,32
+key_establishment,ML-KEM-768,ciphertext,1088
+key_establishment,ML-KEM-768,secret_bytes,32

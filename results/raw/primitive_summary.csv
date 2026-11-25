@@ -1,0 +1,12 @@
+family,algorithm,operation,trials,median_ms,p95_ms,min_ms,max_ms
+key_establishment,ML-KEM-768,decapsulate,12,6.17457,8.77248,5.28495,10.14966
+key_establishment,ML-KEM-768,encapsulate,12,6.72348,11.46176,6.02232,15.40522
+key_establishment,X25519,derive,12,6.02969,10.15977,5.37237,10.38739
+signature,ECDSA-P256,sign,12,6.80316,9.13468,6.06944,10.43828
+signature,ECDSA-P256,verify,12,6.83998,8.05043,6.11232,8.09289
+signature,ML-DSA-65,sign,12,7.95465,9.61233,6.58885,10.17615
+signature,ML-DSA-65,verify,12,6.49775,11.34426,5.19332,13.2948
+signature,RSA-PSS-2048,sign,12,7.41595,9.39645,6.82517,10.68014
+signature,RSA-PSS-2048,verify,12,6.29846,8.62774,5.54706,8.64071
+signature,SLH-DSA-SHA2-128s,sign,12,393.73004,557.49311,373.64516,647.35588
+signature,SLH-DSA-SHA2-128s,verify,12,6.71916,15.74819,5.57875,22.01019

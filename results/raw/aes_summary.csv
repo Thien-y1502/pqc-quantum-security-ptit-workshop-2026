@@ -1,0 +1,5 @@
+algorithm,operation,trials,median_mib_s,p5_mib_s,p95_mib_s
+AES-128-GCM,encrypt,30,9183.54,1323.78,9709.15
+AES-128-GCM,decrypt,30,9328.61,3422.34,9786.73
+AES-256-GCM,encrypt,30,7708.34,3423.78,8501.11
+AES-256-GCM,decrypt,30,8412.64,4477.52,8820.23
