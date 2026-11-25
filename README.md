@@ -14,7 +14,7 @@ This repository accompanies the supplied workshop deck and an editable, reproduc
 
 The `slides/build_deck.js` source can produce a longer rebuilt deck from the included figures and notes. It is distinct from the supplied workshop deck above; keeping both paths explicit avoids confusing an editable rebuild with the presentation that was actually delivered.
 
-**The quantum demonstrations do not break real-world RSA-2048, ECC P-256 or full-strength AES-128/AES-256.** The RSA and ECC demos use deliberately tiny groups and ideal Fourier oracles. The Grover demo is an unstructured search oracle and is **not** a quantum AES oracle. The AES key-recovery demo exposes 116 of 128 key bits and searches only the remaining 12 unknown bits. The PQC operations do execute actual standardized algorithms using OpenSSL 3.5.5.
+**The quantum demonstrations do not break real-world RSA-2048, ECC P-256 or full-strength AES-128/AES-256.** The RSA and ECC demos use deliberately tiny groups and ideal Fourier oracles. The Grover demo is an unstructured search oracle and is **not** a quantum AES oracle. The AES key-recovery demo exposes 116 of 128 key bits and searches only the remaining 12 unknown bits. The archive contains recorded executions of the standardized ML-KEM, ML-DSA and SLH-DSA CLI paths with OpenSSL 3.5.5 (see `results/raw/` and the environment manifest). Re-running those paths requires OpenSSL 3.5+ with the relevant provider; on a machine where `openssl.exe` is unavailable, the real-provider check is `NOT_RUN`, not a PASS.
 
 ## Requirements
 
